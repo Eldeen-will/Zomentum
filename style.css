@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap');
-
 @font-face {
     font-family: "Circular Std";
-    src: url("/fonts/CircularStd-Book.woff2") format("woff2"),
-         url("/fonts/CircularStd-Book.woff") format("woff");
+    src: url("fonts/CircularStd-Book.woff2") format("woff2"),
+         url("fonts/CircularStd-Book.woff") format("woff");
   }
 
 body{
@@ -18,27 +16,24 @@ body{
     margin: 0 auto;
 }
 
-
+        /* Menu & Logo */
 #nav{
-    padding: 18px 0 18px 0;
-    font-weight: bold;
+    padding: 18px 129px 18px 69px;
+    font-weight: 500;
     background: #fff;
     display: flex;
     justify-content: space-between;
-    padding-right: 69px;
-    padding-left: 129px;
+    margin: 0;
 }
 
 #nav ul{
     list-style-type: none;
-    padding: 0;
     display: flex;
     align-items:center;
     margin: 0;
 }
 
 #nav a{
-    padding: 13px 32px 0;
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 0.03em;
@@ -46,16 +41,31 @@ body{
     color: #000;
 }
 
+#nav li{
+    padding-right:32px;
+}
+
 #nav ul{
     justify-content:space-between;
 }
 
-li #demo{
+#nav #demo{
+    display: inline-block;
+    white-space: nowrap;
+    width: 136px;
+    height: 44px;
     line-height: 20px;
-    padding: 13px 23px;
+    padding: 12px 23px;
     font-size: 16px;
     color: #2F70FE;
     border: 1px solid #2F70FE;
     box-sizing: border-box;
 }
 
+#title{
+ padding-top: 8px;
+}
+
+#nav i{
+    padding-right: 4px;
+}
