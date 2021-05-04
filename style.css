@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
+
 @font-face {
     font-family: "Circular Std";
     src: url("fonts/CircularStd-Book.woff2") format("woff2"),
@@ -19,8 +21,8 @@ body{
 
         /* Menu & Logo */
 #nav{
+    font-family: 'Circular Std Medium';
     padding: 18px 97px 18px 69px;
-    font-weight: 500;
     background: #fff;
     display: flex;
     justify-content: space-between;
@@ -30,7 +32,7 @@ body{
 #nav ul{
     list-style-type: none;
     display: flex;
-    align-items:center;
+    align-items: center;
     margin: 0;
 }
 
@@ -43,7 +45,7 @@ body{
 }
 
 #nav li{
-    padding-right:32px;
+    padding-right: 32px;
 }
 
 #nav ul{
@@ -63,10 +65,87 @@ body{
     box-sizing: border-box;
 }
 
-#title{
- padding-top: 8px;
+#logo{
+    padding-top: 8px;
 }
 
 #nav i{
     padding-right: 4px;
 }
+
+        /* Fim de Menu & Logo */
+
+
+#banner{
+    background: #2F70FE;
+    display: flex;
+    flex-flow: column;
+}
+
+/*#wrap-banner:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    transform: rotate(-1deg);
+}*/
+
+#title{
+    padding: 114px 0 33px 0;
+    color: #fff;
+    font-style: normal;
+}
+
+#title h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+}
+
+#title p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+#register{
+    display: flex;
+    justify-content: center;
+}
+
+#register button{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    padding: 16px 25px;
+    background: #000;
+    white-space: nowrap;
+    height: 52px;
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+#banner .img{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bRight{
+    mix-blend-mode: luminosity;
+    padding-right: 128.83px; 
+}
+
+#bLeft{
+    padding-left: 98px;
+}
+
+
+
