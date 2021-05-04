@@ -82,15 +82,15 @@ body{
     flex-flow: column;
 }
 
-/*#wrap-banner:after{
+#banner:after{
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 230px;
     width: 100%;
-    height: 55px;
+    height: 125px;
     background: #fff;
-    transform: rotate(-1deg);
-}*/
+    transform: rotate(-2.9deg);
+}
 
 #title{
     padding: 114px 0 33px 0;
@@ -120,6 +120,7 @@ body{
 }
 
 #register button{
+    cursor: pointer;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -135,15 +136,20 @@ body{
 
 #banner .img{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
 #bRight{
     mix-blend-mode: luminosity;
-    padding-right: 128.83px; 
+    padding-right: 128.83px;
+    margin-top: -178px; 
 }
 
 #bLeft{
+    position: relative;
+    z-index: 1;
+    margin-top: -76px;
     padding-left: 98px;
 }
 
