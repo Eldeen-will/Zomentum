@@ -525,3 +525,60 @@ article i{
 #end p:last-child{
     width: 36.5%;
 }
+
+@media (max-width: 768px){
+
+    #nav{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    #nav li{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background: #181818;
+    }
+
+    #nav .active {
+        padding: 0;
+    }
+
+    #logo{
+        padding: 4px 10px;
+    }
+
+    #links{
+        display: block;
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    #nav a,#nav #demo{
+        color: #fff;
+        padding: 14px 16px;
+        display: block;
+        border: none;
+    }
+
+    #nav #demo{
+        text-transform: uppercase;
+        width: inherit;
+    }
+
+    #nav a.icon {
+        color: #181818;
+        border: 1px solid #000;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      #nav a.icon i{
+          padding: 0;
+      }
+      
+}

@@ -14,19 +14,22 @@
         <nav id="nav">
 
             <div id="logo">
-                <img src="img/title.png" alt="Title">
             </div>
-
-            <ul>
+            <a href="#home" class="active"><img src="img/title.png" alt="Title"></a>
+            <ul id="links">
                 <li><a href="#" >Features</a></li>
                 <li><a href="#" >Integrations</a></li>
                 <li><a href="#" >Pricing</a></li>
                 <li><a href="#" >Company</a></li>
                 <li><a href="#" >Blog</a></li>
-                <li><a href="#" id="demo">Get a demo</a></li>
+                <li class="gaD"><a href="#" id="demo">Get a demo</a></li>
                 <li><a href="#" ><i class="far fa-user"></i>Login</a></li>
             </ul>
-            
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
         </nav>
 
 
@@ -172,7 +175,20 @@
                 <p>Follow us on social</p>
             </div>
             
-        
+            <script>
+
+            window.onload = () => { 
+                    function myFunction() {
+                  var x = document.getElementById("links");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }myFunction();
+                }
+             } 
+            </script>
+
     </div>
  </body>
 </html>
