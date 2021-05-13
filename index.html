@@ -14,8 +14,8 @@
         <nav id="nav">
 
             <div id="logo">
-            </div>
             <a href="#home" class="active"><img src="img/title.png" alt="Title"></a>
+            </div>
             <ul id="links">
                 <li><a href="#" >Features</a></li>
                 <li><a href="#" >Integrations</a></li>
@@ -177,16 +177,17 @@
             
             <script>
 
-            window.onload = () => { 
                     function myFunction() {
                   var x = document.getElementById("links");
                   if (x.style.display === "block") {
                     x.style.display = "none";
+                    myFunction();
                   } else {
                     x.style.display = "block";
-                  }myFunction();
+                    myFunction();
+                  }
                 }
-             } 
+              
             </script>
 
     </div>
