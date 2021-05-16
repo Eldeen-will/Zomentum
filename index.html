@@ -62,18 +62,20 @@
                 </div>
             </div>
 
-            <div class="img">
-                <img id="sm11" src="img/sec1.png" alt="Section 1">
-                <img id="sm22" src="img/sec2.png" alt="Section 2">
-                <img id="sm33" src="img/sec3.png" alt="Section 3">
-            </div>
+            <div id="secM">
+                <div class="img">
+                    <img id="sm11" src="img/sec1.png" alt="Section 1">
+                    <img id="sm22" src="img/sec2.png" alt="Section 2">
+                    <img id="sm33" src="img/sec3.png" alt="Section 3">
+                </div>
 
-            <div id="secT">
-                <p>Be a part of the only All-In-One</br> platform for IT services</p>
-                <p>Come closer to finding your</br> next customer</p>
-                <p>Grow your business with a</br> single click</p>
+                <div id="secT">
+                    <p>Be a part of the only All-In-One platform for IT services</p>
+                    <p>Come closer to finding your next customer</p>
+                    <p>Grow your business with a single click</p>
+                </div>
             </div>
-
+            
             <div class="img2">
                 <img src="img/frame.png" alt="Frame Down">
             </div>
@@ -85,20 +87,20 @@
 
             <article id="art1">
                 <h2>Your channel program</br> on steroids</h3>
-                <p>Tired of finding MSPs that can help you boost your</br> channel sales? You're in luck, because they're all here.</p>
+                <p>Tired of finding MSPs that can help you boost your channel sales? You're in luck, because they're all here.</p>
             </article>
              <div class="pic1" id="imgA1"><img src="img/article1.png" alt="Img 1"></div>
             
              <div class="pic2" id="imgA2"><img src="img/article2.png" alt="Img 2"></div>
              <article id="art2">
                 <h2>Become the vendor</br> everyone wants to buy from</h3>
-                <p>Gain brand authority and visibility with the help of the</br> largest IT service ecosystem. Find customers who are</br> looking for your solution right now!</p>
+                <p>Gain brand authority and visibility with the help of the largest IT service ecosystem. Find customers who are looking for your solution right now!</p>
                 <a href="#" id="sig1">Signup now<i class="fas fa-arrow-right fa-2x"></i></a >
             </article>
             
             <article id="art3">
                 <h2>It's like having Your best</br> Salesman on autopilot</h3>
-                <p>Share collaterals and documents that are</br> automatically branded. Leverage a rich partner</br> network that sells your solution exactly the way</br> your best salesman would.</p>
+                <p>Share collaterals and documents that are automatically branded. Leverage a rich partner network that sells your solution exactly the way your best salesman would.</p>
                 <a href="#">Signup now<i class="fas fa-arrow-right fa-2x"></i></a>
             </article>
              <div class="pic1" id="imgA3"><img src="img/article3.png" alt="Img 3" ></div>
@@ -106,13 +108,13 @@
             <div class="pic2" id="imgA4"><img src="img/article4.png" alt="Img 4"></div>
             <article id="art4">
                 <h2>Track your channel</br> performance</h3>
-                <p>Monitor the health and revenue of your channel</br> program and streamline your campaign to win more</br> customers within Zomentum.</p>
+                <p>Monitor the health and revenue of your channel program and streamline your campaign to win more customers within Zomentum.</p>
                 <a href="#" id="sig2">Signup now<i class="fas fa-arrow-right fa-2x"></i></a>
             </article>
             
             <article id="art5">
                 <h2>Get The best version of</br> Your sales playbook</h3>
-                <p>Gather insights about top channel sellers and find</br> out what pitch and collaterals ensure maximum</br> profitability. Win happy customers with an</br> optimized sales playbook.</p>
+                <p>Gather insights about top channel sellers and find out what pitch and collaterals ensure maximum profitability. Win happy customers with an optimized sales playbook.</p>
                 <a href="#">Signup now<i class="fas fa-arrow-right fa-2x"></i></a>
             </article>      
              <div class="pic1" id="imgA5"><img src="img/article5.png" alt="Img 5"></div>
@@ -179,13 +181,15 @@
 
                     function myFunction() {
                   var x = document.getElementById("links");
-                  if (x.style.display === "block") {
-                    x.style.display = "none";
-                    myFunction();
+                  if (x.classList.contains("menuMobile")) {
+                    x.classList.remove("menuMobile");
                   } else {
-                    x.style.display = "block";
-                    myFunction();
+                    x.classList.add("menuMobile");
                   }
+                }
+
+                window.onload = () => {
+                    myFunction();
                 }
               
             </script>

@@ -203,17 +203,17 @@ body{
 
 
 #sm11{
-    padding-left: 20px;
+    padding-left: 0px;
     margin-left: 0px;
 }
 
 #sm22{
-    padding-left: 110px;
+    padding-left: 130px;
     margin-left: 90px;
 }
 
 #sm33{
-    padding-left: 100px;
+    padding-left: 135px;
     margin-left: 90px;
 }
 
@@ -226,6 +226,7 @@ body{
 }
 
 #secT p{
+    max-width: 235px;
     font-size: 16px;
     font-weight: 400;
     line-height: 27px;
@@ -244,6 +245,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     row-gap: 115px;
+    justify-content: center;
 }
 
 #sec2 article{
@@ -320,6 +322,14 @@ article i{
     padding-bottom: 75px;
 }
 
+#art1 p, #art2 p, #art4 p{
+    max-width: 55%;
+}
+
+#art5 p, #art3 p{
+    max-width: 53%;
+}
+
 #imgA1{
     padding-bottom: 45px;
 }
@@ -340,7 +350,7 @@ article i{
 }
 
 #art1 h2{
-    padding-left: 65px;
+    padding-left: 62px;
 }
 
 #imgA1 img{
@@ -379,11 +389,11 @@ article i{
 }
 
 #art3 h2{
-    padding-left: 89px;
+    padding-left: 88px;
 }
 
 #art3 p{
-    padding-left: 136px;
+    padding-left: 167px;
 }
 
 #art3 a{
@@ -433,7 +443,7 @@ article i{
 }
 
 #art5 p{
-    padding-left: 150px;
+    padding-left: 169px;
 }
 
 #art5 a{
@@ -515,7 +525,9 @@ article i{
     width: 36.5%;
 }
 
-@media (min-width: 769px){
+
+@media (min-width: 1141px){
+
 
     #nav a.icon{
         opacity: 0;
@@ -528,10 +540,8 @@ article i{
     }
 }
 
-@media (max-width: 768px){
 
-
-        /* Menu & Logo */
+@media (max-width: 1140px){
 
 
     #nav{
@@ -556,10 +566,15 @@ article i{
         padding: 8px 10px;
     }
 
-    #links{
-        display: block;
+    ul#links{
+        display:none;
         padding: 0;
         padding-top: 10px;
+    }
+
+    #links.menuMobile {
+        padding-inline-start: 0;
+        display: block;
     }
 
     #nav a,#nav #demo{
@@ -585,13 +600,265 @@ article i{
 
       #nav a.icon i{
           padding: 0;
-      }    
+      }
+
+      #sec1{
+        margin-top: -100px;
+    }
+
+      #footer{
+        column-gap: 80px;
+    }
+    
+    #end p:nth-child(1) {
+        padding-left: 224px;
+    }
+
+}
+@media (max-width: 1139px){
 
 
-        /* Banner */
+    #nav a{
+        font-size: 18px;
+    }
+
+    #bLeft{
+        padding: 0;
+    }
+
+    #bRight{
+        margin-top: -180px;
+        padding: 0;
+        width: 100px;
+        height: 40px;
+        width: auto;
+        height: auto;
+    }
+
+    #sec1 .img2{
+        margin-top: 0;
+    }
+
+    #sec2 article,#sec2 h2,#sec2 p{
+        text-align: center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #imgA2 img, #imgA4 img, #imgA5 img, #imgA3 img{
+        padding-left: 0;
+    }
+
+    #imgA1 img{
+        padding-left: 30px;
+    }
+
+    #sec  #art1 a, #sec2 #art2 a, #sec2  #art3 a, #sec2  #art4 a, #sec2  #art5 a{
+        width: auto;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    #sec2 #art1, #sec2 div, #sec2 #art2, #sec2  #art3, #sec2  #art4, #sec2  #art5{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
 
 
+    #footer{
+        column-gap: 80px;
+    }
+
+    #end p:nth-child(1) {
+        padding-left: 170px;
+    }
+
+    #sec2 #art1{order: 0;}
+    #sec2 #imgA1{order: 1;}
+    #sec2 #art2{order: 2;}
+    #sec2 #imgA2{order: 3;}
+    #sec2 #art3{order: 4;}
+    #sec2 #imgA3{order: 5;}
+    #sec2 #art4{order: 6;}
+    #sec2 #imgA4{order: 7;}
+    #sec2 #art5{order: 8;}
+    #sec2 #imgA5{order: 9;}
 
 
 }
 
+
+@media (max-width: 850px){
+
+
+
+    #secM{
+        column-gap: 30px;
+        display: flex;
+    }
+
+    #sec1 .img, #sec1 #secT{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: column;
+        width: 50%;
+    }
+
+    #sec1 .img{
+        align-items: flex-end;
+        width: 30%;
+    }
+
+    #sec1 #secT{
+        align-items: flex-start;
+        width: 70%;
+        row-gap: 73px;
+    }
+
+    #sec1 .img img{
+        padding: 10px;
+        margin: 0;
+    }
+
+    #sec1 #secT p{
+        margin: 23px;
+        padding: 10px;
+    }
+
+    #sec1 .img1, #sec1 .img2{
+        opacity: 0;
+    }
+
+    #wrapper #sec1 p{
+        margin: 0;
+        max-width: none;
+    }
+
+    #title1{
+        padding-bottom: 15px;
+        padding-top: 20px;
+    }
+
+    #title1 h1{
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    #bRight{
+        width: 40%;
+        margin-top: -30px;
+    }
+
+    #bLeft{
+        width: 40%;
+        margin-top: 0;
+    }
+
+    #footer{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 20px;
+        padding: 40px 30px;
+    }
+
+    #footer nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+    }
+
+    #footer ul{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer a{
+        font-size: 16px;
+    }
+
+    #footer h4{
+        margin: 15px 0;
+    }
+
+    #wrapper #footer:last-child{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #end{
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #wrapper #end p{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 650px){
+    body p,body #wrapper #footer a{
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    #sec2 #imgA1 img, #sec2 #imgA2 img, #sec2 #imgA3 img, #sec2 #imgA4 img, #sec2 #imgA5 img{
+        width: 90%;
+        height: auto;
+    }
+
+    #footer a{
+        white-space: nowrap;
+    }
+
+    #sec2 article h2{
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    #sec2{
+        row-gap: 30px;
+    }
+
+    #sec1 h3{
+        font-size: 30px;
+    }
+
+    #sec1 .img{
+        row-gap: 70px;
+    }
+
+    #sec1 .img img{
+        height: 70px;
+        width: auto;
+    }
+
+    #bRight{
+        margin-top: -10px;
+    }
+
+    #bLeft{
+        margin-top: 10px;
+    }
+
+    #title1 h1{
+        font-size: 24px;
+    }
+
+    #sec1 #sm22{
+        padding-top: 20px;
+    }
+
+    #sec1 #sm33{
+        padding-top: 0;
+    }
+}
