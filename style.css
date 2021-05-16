@@ -550,6 +550,7 @@ article i{
         width: 100%;
         overflow: hidden;
         padding: 0;
+        z-index: 2;
     }
 
     #nav li{
