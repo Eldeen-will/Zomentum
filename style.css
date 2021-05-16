@@ -546,7 +546,8 @@ article i{
 
     #nav{
         display: block;
-        position: relative;
+        position: fixed;
+        width: 100%;
         overflow: hidden;
         padding: 0;
     }
@@ -567,7 +568,7 @@ article i{
     }
 
     ul#links{
-        display:none;
+        display: none;
         padding: 0;
         padding-top: 10px;
     }
