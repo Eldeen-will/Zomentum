@@ -1,4 +1,4 @@
-        /* body & wrapper */
+        /* Body & Wrapper */
 
 
 @import url(https://db.onlinewebfonts.com/c/9475d6a0b79c164f9f605673714e75d9?family=Circular+Std+Medium);
@@ -685,12 +685,10 @@ article i{
     #sec2 #art5{order: 8;}
     #sec2 #imgA5{order: 9;}
 
-
 }
 
 
 @media (max-width: 850px){
-
 
 
     #secM{
@@ -805,13 +803,16 @@ article i{
     }
 }
 
+
 @media (max-width: 650px){
+
+
     body p,body #wrapper #footer a{
         font-size: 14px;
         line-height: 16px;
     }
 
-    #sec2 #imgA1 img, #sec2 #imgA2 img, #sec2 #imgA3 img, #sec2 #imgA4 img, #sec2 #imgA5 img{
+    #sec2 .pic1 img, #sec2 .pic2 img{
         width: 90%;
         height: auto;
     }
