@@ -737,6 +737,7 @@ article i{
 
     #title1{
         padding-bottom: 15px;
+        margin-top: 50px;
         padding-top: 20px;
     }
 
@@ -747,7 +748,7 @@ article i{
 
     #bRight{
         width: 40%;
-        margin-top: -30px;
+        margin-top: -60px;
     }
 
     #bLeft{
